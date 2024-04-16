@@ -150,7 +150,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -158,6 +157,7 @@ section {
 
 .section-container {
   display: flex;
+  gap: 4rem;
 }
 
 /* PROFILE SECTION */
@@ -285,16 +285,19 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  align-items: top;
 }
 
 .arrow {
   position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  top: 2rem; /* Adjust the distance from the top as needed */
+  right: -5rem; /* Adjust the distance from the right as needed */
+  z-index: 1; /* Ensure the arrow is above other content */
 }
 
 .details-container {
   padding: 1.5rem;
+  padding-bottom: 2rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -303,16 +306,33 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
 
 .section__pic-container {
   justify-content: center;
-  height: 400px;
-  width: 400px;
+  align_items: top;
+  margin-top: 2rem;
   margin: auto 0;
+}
+
+.education-school-name {
+  flex: 1;
+  font-weight: bold;
+  color: black;
+  justify-content: center;
+}
+
+.education-school-name-container {
+  display: flex;
+  flex-basis: 100%;
+  gap: 0.5rem;
+}
+
+.education-school-name-container > * {
+  flex: 1;
+}
+
+#experience-container {
+  display: none;
 }
 
 /* EXPERIENCE SECTION */
