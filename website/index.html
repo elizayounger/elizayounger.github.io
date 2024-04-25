@@ -38,7 +38,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.JPEG" alt="Eliza Younger profile picture" />
+        <img src="./assets/profile-pic.JPEG" alt="Eliza Younger profile picture" id="profile-pic" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -77,53 +77,90 @@
       <div id="about-section-container" class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.jpg"
+            src="./assets/islay.jpeg"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container" id="experience-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
+              <h3>Background</h3>
               <br>
-              <div class="education-school-name-container">
-                <div><p class="education-school-name">Code First Girls CFGDegree: </p><p>Software Engineering</p></div>
-                <div><p class="education-school-name">Harvard School of Engineering and Applied Sciences CS50x: </p><p>Introduction to Computer Science</p></div>
-              </div>
+              <p>I grew up on the isle of Islay and moved to the borders of mainland Scotland at the age of 10. </p>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
           </div>
         </div>
+      </div>
+      <div id="about-section-container-2" class="section-container">
+        <div class="section__pic-container">
+          <img id="about-music-pic"
+            src="./assets/about-music-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Music</h3>
+              <br>
+              <p>
+                I attended the Junior Conservatoire of Scotland for piano, harp and singing,
+                where I achieved my grade 8 with Distinction in all 3 instruments. <br><br>
+                I went on to study a Music MA at the University of Glasgow. I graduated from university with
+                the intention of becoming a full-time musician, gigging and performing at events, functions, weddings, funerals etc <br><br>
+                Additionally, Check out some of my performances with my band ‘Red Skye’. <br><br>
+              </p>
+              <button id="btn-band" class="btn btn-color-2" onclick="window.open('https://www.facebook.com/groups/470470918480715')">
+                Red Skye Band
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="about-section-container-3" class="section-container">
+        <div id="career-change-pic" class="section__pic-container">
+          <img
+            src="./assets/about-change.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Changing Career</h3>
+              <br>
+              <p>I grew up on the isle of Islay and moved to the borders of mainland Scotland at the age of 10. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about-section-container-4" class="section-container">
+        <div id="about-tech-pic-div" class="section__pic-container">
+          <img
+            id="about-tech-pic"
+            src="./assets/about-tech-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>My Journey in Tech</h3>
+              <br>
+              <p>
+                I have recently completed both Harvard’s CS50 and Code First Girls Software Engineering CFGDegree courses,
+                achieving a 94% Distinction in the latter. These courses were undertaken alongside my work and personal commitments,
+                showing a strong work ethic and dedication to a new career in tech.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
       <img
         src="./assets/arrow.png"
@@ -274,12 +311,12 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/projects-game.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Kivy Game App</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -298,12 +335,12 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/projects-stock.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Mock Simulated Stock Trading Platform</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -322,12 +359,12 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/projects-birthday.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Birthday Tracker</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
