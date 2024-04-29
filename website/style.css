@@ -398,6 +398,16 @@ article .icon {
   cursor: default;
 }
 
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 1;
+}
+.skill {
+  display: flex;
+  padding: 1rem
+}
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -423,6 +433,10 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.skills-container {
+  display: none
 }
 
 /* CONTACT */

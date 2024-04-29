@@ -39,6 +39,15 @@
   .about-containers {
     margin-top: 0;
   }
+  .projects {
+    max-width: 50%
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .projects {
+    min-width: 90%
+  }
 }
 
 @media screen and (max-width: 600px) {
