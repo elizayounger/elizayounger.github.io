@@ -38,7 +38,7 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="profile__pic-container">
         <img src="./assets/images/profile-pic.JPEG" alt="Eliza Younger profile picture" id="profile-pic" />
       </div>
       <div class="section__text">
@@ -82,243 +82,70 @@
         </div>
       </div>
     </section>
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div id="about-section-container" class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/images/islay.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h3>Background</h3>
-              <br>
-              <p>I grew up in Scotland on the isle of Islay and moved to the mainland at the age of 10.
-                I’m based in Perth, but looking to relocate to a bigger city.
-                I currently work part-time as an accounts manager for Horizon Management.</p>
-            </div>
+      <header>
+          <p class="section__text__p1">Get To Know More</p>
+          <h1 class="title">About Me</h1>
+      </header>
+      
+      <!-- Background Section -->
+      <article class="about-section my-background even">
+          <figure class="section__pic-container">
+              <img src="./assets/images/islay.jpeg" alt="Map of Scotland, highlighting Isle of Islay's Location" class="about-pic" />
+              <!-- <figcaption>Background Image</figcaption> -->
+          </figure>
+          <div class="about-details">
+              <h2>Background</h2>
+              <p>I grew up in Scotland on the isle of Islay and moved to the mainland at the age of 10. I’m based in Perth, but looking to relocate to a bigger city. I currently work part-time as an accounts manager for Horizon Management.</p>
           </div>
-        </div>
-      </div>
-      <div id="about-section-container-2" class="section-container">
-        <div class="section__pic-container">
-          <img id="about-music-pic"
-            src="./assets/images/about-music-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h3>Music</h3>
-              <br>
-              <p>
-                I attended the Junior Conservatoire of Scotland for piano, harp and singing,
-                where I achieved my grade 8 with Distinction in all 3 instruments. <br><br>
-                I went on to study a Music MA at the University of Glasgow. I graduated from university with
-                the intention of becoming a full-time musician, gigging and performing at events, functions, weddings, funerals etc <br><br>
-                Additionally, Check out some of my performances with my band ‘Red Skye’. <br><br>
-              </p>
-              <button id="btn-band" class="btn btn-color-2" onclick="window.open('https://www.facebook.com/groups/470470918480715')">
-                Red Skye Band
-              </button>
-            </div>
+      </article>
+      
+      <!-- Music Section -->
+      <article class="about-section music odd">
+          <figure class="section__pic-container">
+              <img src="./assets/images/about-music-pic.jpg" alt="Eliza Playing Harp" class="about-pic" />
+              <!-- <figcaption>Music Image</figcaption> -->
+          </figure>
+          <div class="about-details">
+              <h2>Music</h2>
+              <p>I attended the Junior Conservatoire of Scotland for piano, harp, and singing, achieving grade 8 with Distinction in all 3 instruments. I went on to study a Music MA at the University of Glasgow, intending to become a full-time musician.</p>
+              <p>Check out some performances with my band ‘Red Skye’:</p>
+              <button id="btn-band" class="btn btn-color-2" onclick="window.open('https://www.facebook.com/groups/470470918480715')">Red Skye Band</button>
           </div>
-        </div>
+      </article>
+      
+      <!-- Career Change Section -->
+      <article class="about-section career-change even">
+          <figure class="section__pic-container">
+              <img src="./assets/images/about-change.JPG" alt="Profile picture" class="about-pic" />
+              <!-- <figcaption>Career Change Image</figcaption> -->
+          </figure>
+          <div class="about-details">
+              <h2>Changing Career</h2>
+              <p>After COVID, I began working as a full-time musician. However, I found the schedule isolating and eventually turned to programming. I enjoyed the creativity software engineering offered, leading to a career change.</p>
+          </div>
+      </article>
+      
+      <!-- Journey in Tech Section -->
+      <article class="about-section tech-journey odd">
+          <figure class="section__pic-container">
+              <img src="./assets/images/about-tech-pic.png" alt="Tech journey" class="about-pic" />
+              <!-- <figcaption>Tech Journey Image</figcaption> -->
+          </figure>
+          <div class="about-details">
+              <h2>My Journey in Tech</h2>
+              <p>I recently completed both Harvard’s CS50 and Code First Girls Software Engineering courses, earning a 94% Distinction in the latter. This reflects my commitment to a new career in tech.</p>
+          </div>
+      </article>
+      
+      <!-- Navigation Arrow -->
+      <nav>
+          <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+      </nav>
+  </section>
+  
 
-      </div>
-      <div id="about-section-container-3" class="section-container">
-        <div id="career-change-pic" class="section__pic-container">
-          <img
-            src="./assets/images/about-change.JPG"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h3>Changing Career</h3>
-              <br>
-              <p>After COVID, I began to take on work as a musician, pursuing a full-time career.
-                I found that as a solo performer with bookings predominantly in evenings or weekends, my schedule was very at odds with family and friends, making me very isolated.
-                I began to consider other career avenues and was drawn to programming through my interest in studio work and recording software.
-                I loved the creativity that software engineering could facilitate, and the fulfilment from building complete projects. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="about-section-container-4" class="section-container">
-        <div id="about-tech-pic-div" class="section__pic-container">
-          <img
-            id="about-tech-pic"
-            src="./assets/images/about-tech-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h3>My Journey in Tech</h3>
-              <br>
-              <p>
-                I have recently completed both Harvard’s CS50 and Code First Girls Software Engineering CFGDegree courses,
-                achieving a 94% Distinction in the latter. These courses were undertaken alongside my work and personal commitments,
-                showing a strong work ethic and dedication to a new career in tech.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <img
-        src="./assets/icons/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/icons/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/icons/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
