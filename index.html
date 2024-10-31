@@ -85,7 +85,6 @@
         </div>
       </div>
     </section>
-
     <section id="about">
       <header>
           <p class="section__text__p1">Get To Know More</p>
@@ -146,138 +145,52 @@
       <nav>
           <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
       </nav>
-  </section>
-  
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container projects">
-            <div class="article-container">
-              <img
-                src="./assets/images/projects-game.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Kivy Game App</h2>
-            <div class="btn-container">
-            <a
-              href="https://github.com/elizayounger/GuessTheSongGame"
-              target="_blank"
-              rel="noopener noreferrer">
-              <button
-                class="btn btn-color-2 project-btn">
-                Github
-              </button>
-            </a>
-
-              <button
-                class="btn btn-color-2 project-btn">
-<!--                onclick="location.href='https://github.com/'"-->
-                <a href="underConstruction.html">
-                  Live Demo
-                </a>
-              </button>
-            </div>
-            <div class="skills-container">
-              <div class="skills-duo">
-                <div class="skill">
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="checkmark icon"
-                    class="icon"
-                  />
-                  <p>Python</p>
-                </div>
-                <div class="skill">
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="checkmark icon"
-                    class="icon"
-                  />
-                  <p>HTML</p>
-                </div>
-                <div class="skill">
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="checkmark icon"
-                    class="icon"
-                  />
-                  <p>Python</p>
-                </div>
-              </div>
-          </div>
-        </div>
-          <div class="details-container color-container projects">
-            <div class="article-container">
-              <img
-                src="./assets/images/projects-stock.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Mock Simulated Stock Trading Platform</h2>
-            <div class="btn-container">
-              <a
-              href="https://github.com/elizayounger/MockStocks-Simulated-Stock-Trading-Platform"
-              target="_blank"
-              rel="noopener noreferrer">
-              <button
-                class="btn btn-color-2 project-btn">
-                Github
-              </button>
-            </a>
-
-              <button
-                class="btn btn-color-2 project-btn">
-<!--                onclick="location.href='https://github.com/'"-->
-                <a href="underConstruction.html">
-                  Live Demo
-                </a>
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container projects">
-            <div class="article-container">
-              <img
-                src="./assets/images/projects-birthday.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Birthday Tracker</h2>
-            <div class="btn-container">
-              <a
-              href="https://github.com/elizayounger/birthday_website"
-              target="_blank"
-              rel="noopener noreferrer">
-              <button
-                class="btn btn-color-2 project-btn">
-                Github
-              </button>
-            </a>
-
-              <button
-                class="btn btn-color-2 project-btn">
-<!--                onclick="location.href='https://github.com/'"-->
-                <a href="underConstruction.html">
-                  Live Demo
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/icons/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
+
+    <section id="projects"> <!-- WHOLE SECTION -->
+
+      <header> <!-- HEADER -->
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+      </header>
+      
+      <div class="projects-container">
+        <article class="project"> <!-- PROJECT 1 -->
+          <figure class="project-image-container">
+            <img src="./assets/images/projects-game.png" alt="Screenshot of Kivy Game App" class="project-img" />
+          </figure>
+          <h2 class="experience-sub-title project-title">Kivy Game App</h2>
+          <footer class="btn-container">
+            <a href="https://github.com/elizayounger/GuessTheSongGame" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
+            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
+          </footer>
+        </article>
+
+        <article class="project"> <!-- PROJECT 2 -->
+          <figure class="project-image-container">
+            <img src="./assets/images/projects-stock.png" alt="Screenshot of Mock Simulated Stock Trading Platform" class="project-img" />
+          </figure>
+          <h2 class="experience-sub-title project-title">Mock Simulated Stock Trading Platform</h2>
+          <footer class="btn-container">
+            <a href="https://github.com/elizayounger/MockStocks-Simulated-Stock-Trading-Platform" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
+            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
+          </footer>
+        </article>
+
+        <article class="project"> <!-- PROJECT 3 -->
+          <figure class="project-image-container">
+            <img src="./assets/images/projects-birthday.png" alt="Screenshot of Birthday Tracker" class="project-img" />
+          </figure>
+          <h2 class="experience-sub-title project-title">Birthday Tracker</h2>
+          <footer class="btn-container">
+            <a href="https://github.com/elizayounger/birthday_website" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
+            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
+          </footer>
+        </article>
+      </div>
+      <img src="./assets/icons/arrow.png" alt="Arrow icon leading to Contact section" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -300,7 +213,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="page-footer">
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">

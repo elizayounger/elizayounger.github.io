@@ -260,7 +260,8 @@ section {
 
 #about article {
   display: flex;
-  width: 90vw;
+  /* flex-wrap: wrap; */
+  width: 85vw;
   margin: 2rem auto;
   border: 0.5px solid black;
   border-radius: 2rem;
@@ -274,7 +275,7 @@ article.even div { /*alternate articles*/
   padding-left: 2rem;
 }
 article.about-section figure { /*picture container*/
-  flex: 1;
+  flex: 1 1 calc(23.33% - 20px); /* Start with 3 columns */
   overflow: hidden;
 }
 .about-pic {
@@ -299,103 +300,67 @@ article.about-section div button {
   margin: 2rem;
 }
 
+/* -----------PROJECTS SECTION----------- */
 
-/* EXPERIENCE SECTION */
-#experience-container {
-  display: none;
-}
-#experience {
-  display: none;
-  position: relative;
-}
-
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
+/* Projects Container as a Responsive Flexbox */
+.projects-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  gap: 20px;
+  max-width: 95vw;
+  margin: auto;
 }
 
-#experience article {
+/* Project as a Flex Item */
+.project {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  flex: 1 1 calc(33.33% - 20px); /* Start with 3 columns */
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 45vw;
 }
 
-article .icon {
-  cursor: default;
-}
-
-.skills-container {
-  display: flex;
-  justify-content: space-around;
-  flex-basis: 1;
-}
-.skill {
-  display: flex;
-  padding: 1rem
-}
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+/* Styling for the image in the top of the project */
+.project-image-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
+/* Title centered and spaced */
 .project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-.skills-container {
-  display: none
-}
-
-/* FACTOR THIS OUT */
-.details-container { 
-  padding: 1.5rem;
-  padding-bottom: 2rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  padding: 10px;
+  font-size: 1.25em;
   text-align: center;
 }
+/* Buttons in footer, styled to be side-by-side */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+.project-btn {
+  padding: 8px 16px;
+  border-radius: 2rem;
+  font-size: 1em;
+  max-height: 3rem;
+}
 
-/* CONTACT */
+footer.btn-container {
+  margin-bottom: 2em;
+}
+
+/* -----------CONTACT----------- */
 
 #contact {
   display: flex;
@@ -437,11 +402,11 @@ article .icon {
 
 /* FOOTER SECTION */
 
-footer {
+.page-footer {
   height: 26vh;
   margin: 0 1rem;
 }
 
-footer p {
+.page-footer p {
   text-align: center;
 }
