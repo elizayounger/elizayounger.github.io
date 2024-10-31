@@ -28,9 +28,14 @@ a,
   display: flex; /*flex*/
   justify-content: space-between; /* Better control of spacing */
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 5vw;
   height: 17vh;
   margin: auto;
+}
+@media only screen and (min-width: 1024px) {
+  #desktop-nav {
+    padding: 0 15vw;
+  }
 }
 .logo {
   font-size: 2rem;
@@ -58,7 +63,7 @@ a,
   }
 }
 @media only screen and (max-width: 775px) {
-  .nav-links-container {
+  #desktop-nav .nav-links-container {
     display: none;
   }
   .menu-icon {
@@ -174,6 +179,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 4rem;
+  padding: 0 10vw 4rem;
 }
 .profile__pic-container {
   display: flex;
@@ -387,9 +393,8 @@ footer.btn-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
+  margin-top: 2rem;
 }
-
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
@@ -400,34 +405,60 @@ footer.btn-container {
   margin: 2rem auto;
   padding: 0.5rem;
 }
-
 .contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
-}
-
-.contact-info-container p {
   font-size: larger;
 }
-
+@media only screen and (max-width: 600px) {
+  .contact-info-container p {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
 .contact-icon {
   cursor: default;
 }
-
 .email-icon {
   height: 2.5rem;
+}
+#contact a {
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .contact-info-upper-container {
+    flex-wrap: wrap;
+    margin: auto;
+  }
 }
 
 /* FOOTER SECTION */
 
-.page-footer {
-  height: 26vh;
-  margin: 0 1rem;
+.page-footer { /* footer*/
+  height: 16vh;
+  margin: 1rem 1rem;
 }
-
-.page-footer p {
-  text-align: center;
+footer .nav-links-container { /* list container */
+}
+footer .nav-links { /* unordered list */
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 425px) {
+  footer .nav-links {
+    display: block;
+  }
+  footer .nav-links li {
+    text-align: center;
+  }
+}
+footer .nav-links a {
+  text-decoration: none;
+  font-size: larger;
+  color: black;
 }
