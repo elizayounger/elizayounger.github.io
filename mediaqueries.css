@@ -1,12 +1,4 @@
-/* Laptop styles */
-@media (min-width: 1025px) {
-  
-}
 
-/* Tablet styles */
-@media (max-width: 1024px) {
-  
-}
 @media screen and (max-width: 775px) {
   #about article {
     display: block;
@@ -28,17 +20,15 @@
     min-width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
 
-}
  /* FROM PROJECTS STYLING */
+
 /* Media Query for smaller screens */
 @media (max-width: 900px) {
   .project {
     flex: 1 1 calc(50% - 20px); /* 2 columns */
   }
 }
-
 @media (max-width: 600px) {
   .project {
     flex: 1 1 100%; /* 1 column */

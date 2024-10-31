@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <script src="script.js" defer></script>
-    <script src="script.js" defer></script>
   </head>
   <body>
+    <nav id="hamburger-nav" onclick="toggleMenu()"> <!-- nav block -->
+      <section id="hamburger-nav-container"> <!-- nav square -->
+        <div class="icon-container"><i class="close-icon" onclick="toggleMenu()"></i></div>
+        <div class="hamburger-menu"> <!-- elements -->
+          <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+    </nav>
     <nav id="desktop-nav">
       <div class="logo">Eliza Younger</div>
-      <div>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -21,69 +33,35 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+      <i class="menu-icon" onclick="toggleMenu()"></i>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Eliza Younger</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
+    <section id="profile" aria-labelledby="profile-title">
       <div class="profile__pic-container">
         <img src="./assets/images/profile-pic.JPEG" alt="Eliza Younger profile picture" id="profile-pic" />
       </div>
+
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Eliza Younger</h1>
+        <h1 class="title" id="profile-title">Eliza Younger</h1>
         <p class="section__text__p2">Software Engineer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Eliza Younger CV.pdf')"
-          >
+          <a class="btn btn-color-2" href="./assets/Eliza Younger CV.pdf" download>
             Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          </a>
+          <a class="btn btn-color-1" href="./#contact">
             Contact Info
-          </button>
+          </a>
         </div>
-        <div id="socials-container">
-          <a
-            href="https://www.linkedin.com/in/eliza-y-73928283/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="./assets/icons/linkedin.png"
-              src="./assets/icons/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-            />
+        <div id="socials-container" role="navigation" aria-label="Social Media Links">
+          <a href="https://www.linkedin.com/in/eliza-y-73928283/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/icons/linkedin.png" alt="My LinkedIn profile" class="icon" />
           </a>
-
-          <a
-            href="https://github.com/elizayounger"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="./assets/icons/github.png"
-              src="./assets/icons/github.png"
-              alt="My Github profile"
-              class="icon"
-            />
+          <a href="https://github.com/elizayounger" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/icons/github.png" alt="My GitHub profile" class="icon" />
           </a>
-
         </div>
       </div>
+      
     </section>
     <section id="about">
       <header>
@@ -146,8 +124,7 @@
           <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
       </nav>
     </section>
-
-    <section id="projects"> <!-- WHOLE SECTION -->
+    <section id="projects"> 
 
       <header> <!-- HEADER -->
         <p class="section__text__p1">Browse My Recent</p>
@@ -190,7 +167,6 @@
       </div>
       <img src="./assets/icons/arrow.png" alt="Arrow icon leading to Contact section" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
-
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
