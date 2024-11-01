@@ -15,9 +15,8 @@
         <div class="icon-container"><i class="close-icon" onclick="toggleMenu()"></i></div>
         <div class="hamburger-menu"> <!-- elements -->
           <ul class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
         </div>
@@ -27,9 +26,8 @@
       <div class="logo">Eliza Younger</div>
       <div class="nav-links-container">
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <!-- <li><a href="#experience">Experience</a></li> -->
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -62,6 +60,148 @@
         </div>
       </div>
       
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Skills & Technologies</p>
+      <h1 class="title">Technical Skills</h1>
+    
+      <div class="skills-container">
+        <div class="skills-category">
+          <h2>Languages</h2>
+          <p>Java, C, Python, JavaScript, HTML, CSS, SQL</p>
+        </div>
+        <div class="skills-category">
+          <h2>Frameworks</h2>
+          <p>Flask, Bootstrap, Jinja</p>
+        </div>
+        <div class="skills-category">
+          <h2>Database Management</h2>
+          <p>MySQL, SQLite</p>
+        </div>
+        <div class="skills-category">
+          <h2>API</h2>
+          <p>RESTful</p>
+        </div>
+        <div class="skills-category">
+          <h2>Version Control</h2>
+          <p>Git, GitHub</p>
+        </div>
+        <div class="skills-category">
+          <h2>IDEs</h2>
+          <p>VSCode, PyCharm, IntelliJ, MySQLWorkbench</p>
+        </div>
+        <div class="skills-category">
+          <h2>Debugging & Troubleshooting</h2>
+          <p>Unit Testing, Mockito, Logging, Regression, Valgrind</p>
+        </div>
+        <div class="skills-category">
+          <h2>Team Collaboration & Methodologies</h2>
+          <p>Agile, Scrum, Kanban</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects"> 
+      <header> <!-- HEADER -->
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+      </header>
+      
+      <div class="projects-container">
+
+        <article class="project"> <!-- PROJECT 1 -->
+          <figure class="project-image-container">
+            <img src="./assets/images/projects-game.png" alt="Screenshot of Kivy Game App" class="project-img" />
+          </figure>
+          <h2 class="experience-sub-title project-title">Guess The Song Game</h2>
+          <footer class="btn-container">
+            <a href="https://github.com/elizayounger/GuessTheSongGame" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
+            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
+          </footer>
+          <div class="expandable-section">
+            <div class="header toggle" onclick="toggleSkillsOverview()">
+                <span class="header-text btn">Skills Overview</span>
+            </div>
+            <div class="grid-container grid" style="display: none">
+              <div class="grid-item left">Languages</div>
+              <div class="grid-item right">Python</div>
+      
+              <div class="grid-item left">Frameworks</div>
+              <div class="grid-item right">Kivy</div>
+      
+              <div class="grid-item left">Database Management</div>
+              <div class="grid-item right">Flatfile DB</div>
+      
+              <div class="grid-item left">Debugging & Troubleshooting</div>
+              <div class="grid-item right">Unit Testing</div>
+      
+              <div class="grid-item left">Team Collaboration & Methods</div>
+              <div class="grid-item right">Agile, Scrum</div>
+
+              <div class="grid-item left">Version Control</div>
+              <div class="grid-item right">Git, GitHub</div>
+            </div>
+        </div>
+        </article>
+
+        <article class="project"> <!-- PROJECT 2 -->
+          <figure class="project-image-container">
+            <img src="./assets/images/projects-stock.png" alt="Screenshot of Mock Simulated Stock Trading Platform" class="project-img" />
+          </figure>
+          <h2 class="experience-sub-title project-title">Mock Simulated Stock Trading Platform</h2>
+          <footer class="btn-container">
+            <a href="https://github.com/elizayounger/MockStocks-Simulated-Stock-Trading-Platform" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
+            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
+          </footer>
+          <div class="expandable-section">
+            <div class="header toggle" onclick="toggleSkillsOverview()">
+                <span class="header-text btn">Skills Overview</span>
+            </div>
+            <div class="grid-container grid" style="display: none">
+              <div class="grid-item left">Languages</div>
+              <div class="grid-item right">Python, HTML, CSS</div>
+      
+              <div class="grid-item left">Frameworks</div>
+              <div class="grid-item right">Flask</div>
+      
+              <div class="grid-item left">Database Management</div>
+              <div class="grid-item right">SQL</div>
+
+              <div class="grid-item left">Version Control</div>
+              <div class="grid-item right">Git, GitHub</div>
+            </div>
+        </div>
+        </article>
+
+        <article class="project"> <!-- PROJECT 3 -->
+          <figure class="project-image-container">
+            <img src="./assets/images/projects-birthday.png" alt="Screenshot of Birthday Tracker" class="project-img" />
+          </figure>
+          <h2 class="experience-sub-title project-title">Birthday Tracker</h2>
+          <footer class="btn-container">
+            <a href="https://github.com/elizayounger/birthday_website" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
+            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
+          </footer>
+          <div class="expandable-section">
+            <div class="header toggle" onclick="toggleSkillsOverview()">
+                <span class="header-text btn">Skills Overview</span>
+            </div>
+            <div class="grid-container grid" style="display: none">
+              <div class="grid-item left">Languages</div>
+              <div class="grid-item right">Python, HTML, CSS</div>
+      
+              <div class="grid-item left">Frameworks</div>
+              <div class="grid-item right">Flask</div>
+      
+              <div class="grid-item left">Database Management</div>
+              <div class="grid-item right">SQL</div>
+
+              <div class="grid-item left">Version Control</div>
+              <div class="grid-item right">Git, GitHub</div>
+            </div>
+        </div>
+        </article>
+      </div>
+      <img src="./assets/icons/arrow.png" alt="Arrow icon leading to Contact section" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
     <section id="about">
       <header>
@@ -124,50 +264,6 @@
           <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
       </nav>
     </section>
-    <section id="projects"> 
-
-      <header> <!-- HEADER -->
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-      </header>
-      
-      <div class="projects-container">
-        <article class="project"> <!-- PROJECT 1 -->
-          <figure class="project-image-container">
-            <img src="./assets/images/projects-game.png" alt="Screenshot of Kivy Game App" class="project-img" />
-          </figure>
-          <h2 class="experience-sub-title project-title">Kivy Game App</h2>
-          <footer class="btn-container">
-            <a href="https://github.com/elizayounger/GuessTheSongGame" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
-            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
-          </footer>
-        </article>
-
-        <article class="project"> <!-- PROJECT 2 -->
-          <figure class="project-image-container">
-            <img src="./assets/images/projects-stock.png" alt="Screenshot of Mock Simulated Stock Trading Platform" class="project-img" />
-          </figure>
-          <h2 class="experience-sub-title project-title">Mock Simulated Stock Trading Platform</h2>
-          <footer class="btn-container">
-            <a href="https://github.com/elizayounger/MockStocks-Simulated-Stock-Trading-Platform" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
-            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
-          </footer>
-        </article>
-
-        <article class="project"> <!-- PROJECT 3 -->
-          <figure class="project-image-container">
-            <img src="./assets/images/projects-birthday.png" alt="Screenshot of Birthday Tracker" class="project-img" />
-          </figure>
-          <h2 class="experience-sub-title project-title">Birthday Tracker</h2>
-          <footer class="btn-container">
-            <a href="https://github.com/elizayounger/birthday_website" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
-            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
-          </footer>
-        </article>
-      </div>
-      <img src="./assets/icons/arrow.png" alt="Arrow icon leading to Contact section" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
-
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>

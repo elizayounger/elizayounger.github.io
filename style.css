@@ -15,6 +15,9 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+header { 
+  margin: 1rem 0;
+}
 
 /* TRANSITION */
 
@@ -337,8 +340,6 @@ article.about-section div button {
   max-width: 95vw;
   margin: auto;
 }
-
-/* Project as a Flex Item */
 .project {
   display: flex;
   flex: 1 1 calc(33.33% - 20px); /* Start with 3 columns */
@@ -348,27 +349,21 @@ article.about-section div button {
   overflow: hidden;
   max-width: 45vw;
 }
-
-/* Styling for the image in the top of the project */
 .project-image-container {
   width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
-
 .project-img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-
-/* Title centered and spaced */
 .project-title {
   padding: 10px;
   font-size: 1.25em;
   text-align: center;
 }
-/* Buttons in footer, styled to be side-by-side */
 .btn-container {
   display: flex;
   justify-content: center;
@@ -382,9 +377,58 @@ article.about-section div button {
   font-size: 1em;
   max-height: 3rem;
 }
-
 footer.btn-container {
   margin-bottom: 2em;
+}
+/* Skills Overview */
+#projects .expandable-section {
+  max-width: 99%;
+  min-width: 99%;
+  margin: auto; 
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+#projects .header:hover {
+  background-color:rgba(85, 85, 85, 1);
+  color: white;
+}
+#projects .header {
+  display: flex;
+  align-items: center;
+  cursor: pointer; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+#projects .arrow {
+  width: 1rem; /* Adjust width to your preference */
+  height: 1rem; /* Adjust height to match width */
+  background-image: url("assets/icons/chevron-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+  margin-right: 10px;
+}
+/* Rotate on expand (if applicable) */
+.expanded .arrow {
+  transform: rotate(90deg); /* Rotate right */
+}
+#projects .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px; 
+  padding: 20px; 
+}
+#projects .grid-item {
+  padding: 5px; 
+  border-bottom: 1px solid #eee; 
+}
+#projects .grid-item:last-child {
+  border-bottom: none; 
+}
+.left {
+  font-weight: bold;
 }
 
 /* -----------CONTACT----------- */
