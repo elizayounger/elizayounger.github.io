@@ -330,6 +330,48 @@ article.about-section div button {
   margin: 2rem;
 }
 
+/* -----------SKILLS SECTION----------- */
+
+#skills {
+  padding: 2em;
+  text-align: center;
+}
+
+.section__text__p1 {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.skills-category {
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.skills-category p {
+  font-size: 1em;
+  color: #666;
+}
+
+
 /* -----------PROJECTS SECTION----------- */
 
 /* Projects Container as a Responsive Flexbox */
@@ -472,6 +514,10 @@ footer.btn-container {
 #contact a {
   text-decoration: none;
   color: black;
+}
+#contact a:hover, .page-footer a:hover {
+  text-decoration: underline;
+  color: grey;
 }
 @media only screen and (max-width: 600px) {
   .contact-info-upper-container {
