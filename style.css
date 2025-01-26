@@ -371,6 +371,41 @@ article.about-section div button {
   color: #666;
 }
 
+#skills ul.skills {
+  text-align: left;
+  list-style-type: none;
+}
+
+#skills ul.skills li {
+  position: relative;
+  background-color: #e4e7ea;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#skills ul.skills li::before {
+  position: absolute;
+  left: -1.5rem; 
+  color: #0077ff; 
+  font-size: 1.2rem; 
+  line-height: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+#skills ul.skills li:hover {
+  color: #0077ff; 
+  transform: translateX(5px);
+}
+
+#skills ul.skills li:hover::before {
+  transform: scale(1.2); 
+}
+
+
 
 /* -----------PROJECTS SECTION----------- */
 
