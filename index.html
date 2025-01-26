@@ -109,6 +109,35 @@
       
       <div class="projects-container">
 
+        <article class="project"> <!-- PROJECT 3 -->
+          <figure class="project-image-container">
+            <img src="./assets/images/projects-birthday.png" alt="Screenshot of Birthday Tracker" class="project-img" />
+          </figure>
+          <h2 class="experience-sub-title project-title">Birthday Tracker</h2>
+          <footer class="btn-container">
+            <a href="https://github.com/elizayounger/birthday_website" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">Github</a>
+            <a href="underConstruction.html" class="btn btn-color-2 project-btn">Live Demo</a>
+          </footer>
+          <div class="expandable-section">
+            <div class="header toggle" onclick="toggleSkillsOverview()">
+                <span class="header-text btn">Skills Overview</span>
+            </div>
+            <div class="grid-container grid" style="display: none">
+              <div class="grid-item left">Languages</div>
+              <div class="grid-item right">Python, HTML, CSS</div>
+      
+              <div class="grid-item left">Frameworks</div>
+              <div class="grid-item right">Flask</div>
+      
+              <div class="grid-item left">Database Management</div>
+              <div class="grid-item right">SQL</div>
+
+              <div class="grid-item left">Version Control</div>
+              <div class="grid-item right">Git, GitHub</div>
+            </div>
+          </div>
+        </article>
+
         <article class="project"> <!-- PROJECT 1 -->
           <figure class="project-image-container">
             <img src="./assets/images/projects-game.png" alt="Screenshot of Kivy Game App" class="project-img" />
@@ -202,7 +231,6 @@
         </div>
         </article>
       </div>
-      <img src="./assets/icons/arrow.png" alt="Arrow icon leading to Contact section" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
     <section id="about">
       <header>
@@ -260,10 +288,7 @@
           </div>
       </article>
       
-      <!-- Navigation Arrow -->
-      <nav>
-          <img src="./assets/icons/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-      </nav>
+
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -293,7 +318,6 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <!-- <li><a href="#experience">Experience</a></li> -->
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
