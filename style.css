@@ -235,9 +235,9 @@ section {
 }
 .arrow {
   position: absolute;
-  top: 2rem; /* Adjust the distance from the top as needed */
-  right: -5rem; /* Adjust the distance from the right as needed */
-  z-index: 1; /* Ensure the arrow is above other content */
+  top: 2rem; 
+  right: -5rem; 
+  z-index: 1; 
 }
 
 /* BUTTONS */
@@ -424,6 +424,7 @@ article.about-section div button {
   max-height: 3rem;
 }
 footer.btn-container {
+  display: flex;
   margin-bottom: 2em;
 }
 /* Skills Overview */
@@ -434,6 +435,7 @@ footer.btn-container {
   background-color: #fff; 
   border-radius: 8px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  align-content: top;
 }
 #projects .header:hover {
   background-color:rgba(85, 85, 85, 1);
